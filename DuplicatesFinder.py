@@ -10,6 +10,13 @@ class DuplicatesFinder:
         self.sd = StringDistance()
     
     def are_same(self, p1: Place, p2: Place, debug=False):
+        """
+        Determines if two places object belong to the same object
+        :param p1: first place
+        :param p2: second place
+        :param debug: bool, if comments are needed
+        :return: True if places are the same
+        """
         if debug:
             print(f'Comparing {p1} and {p2}...')
             print()
